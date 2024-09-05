@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM exemplo 4 </title>
+</head>
+<body>
+
+    <h1> Usando seletor do DOM</h1>
+    <ul>
+        <li>
+            Java
+        </li>
+        <li>
+            Python
+        </li>
+        <li>
+            NodeJS
+        </li>
+    </ul>
+
+    <div id="conteudo" name="divconteudo" class="mensagem">
+    </div>
+
+    <div name="divconteudo" class="mensagem"></div>
+    
+</body>
+<script>
+    elemento0 = document.getElementsByTagName('li')[0];
+    elemento0.style.background = 'red';
+    
+    elementoDiv = document.getElementById("conteudo");
+    elementoDiv.innerHTML = "<p> adicionando paragrafo a div </p>"
+
+    elementDivName = document.getElementsByName("divconteudo")[1];
+    elementDivName.innerText = "adicionando texto ao div 2";
+    elementDivName.style.background = "yellow";
+
+
+</script>
+</html>
